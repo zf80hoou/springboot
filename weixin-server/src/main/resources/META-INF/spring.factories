@@ -1,0 +1,2 @@
+#配置引入的需要交给spring关联的文件
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=

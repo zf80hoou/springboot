@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8"/>
+<title>登录</title>
+<link href="/css/index.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container">
+		<h2 th:text="${msg}"></h2>
+	</div>
+	<form action="/weixin-server/user/doLogin" method='post'>
+    	<input type='text' name='userName' />
+    	<input type='password' name='passWord'/>
+    	<input type='submit' value='登陆'/>
+	</form>
+	<br/>
+	<br/>
+	<br/>
+	测试验证文件上传
+	<form action="/weixin-server/file" method='post'>
+    	<input type="file" name='flie'/>
+    	<input type='submit' value='上传'/>
+	</form>
+</body>
+</html>
